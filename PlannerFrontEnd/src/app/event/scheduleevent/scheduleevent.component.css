@@ -1,0 +1,39 @@
+#addEvent {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    height: auto;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    background: whitesmoke;
+    opacity: 1 !important;
+}
+
+#box {
+    height: auto;
+    background-image: url('/assets/outdoors1.jpg');
+    background-position: center;
+    opacity: .9;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 2px solid dimgray;
+}
+
+h4 {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+input, select {
+    margin-top: -10px;
+}
+
+#addEventError {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: none;
+    color: darkred;
+}

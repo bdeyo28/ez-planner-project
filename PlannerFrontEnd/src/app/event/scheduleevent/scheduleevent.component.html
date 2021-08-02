@@ -1,0 +1,55 @@
+<body>
+
+    <div id="box">
+
+        <br>
+        <br>
+        <br>
+
+        <div id="addEvent">
+            <!-- header1 -->
+            <h1><b><i>Schedule An Event</i></b></h1>
+            <h3><b>Enter Attributes Into Each Field</b></h3>
+            <h4>Organizer: {{organizer.name}}</h4>
+            <h4>Event Name</h4>
+            <input style="width: 300px" type="text" [(ngModel)]="eventName" placeholder="Enter Event Name Here : ">
+            <br>
+            <br>
+            <h4>Event Location</h4>
+            <input style="width: 300px" type="text" [(ngModel)]="location" placeholder="Enter Event Location Here : ">
+            <br>
+            <br>
+            <h4>Event Time</h4>
+            <input style="width: 300px" type="text" [(ngModel)]="time" placeholder="Enter Event Time Here : ">
+            <br>
+            <br>
+            <h4>Event Category</h4>
+            <select style="width: 100px" [(ngModel)]="category">
+                <option [ngValue]=null></option>
+                <option value="Friends">Friends</option>
+                <option value="Family">Family</option>
+                <option value="Work">Work</option>
+            </select>
+            <br>
+            <br>
+            <h4>Date</h4>
+            <input style="width: 300px" type="date" [(ngModel)]="eventDate" value="YYYY-MM-DD" min="2021-07-07"
+                max="2025-12-31">
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-success" id="button1" (click)="addEvent()">Add Event</button>
+
+            <br>
+            <br>
+            <div id = "addEventError"></div>
+            <br>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+</body>

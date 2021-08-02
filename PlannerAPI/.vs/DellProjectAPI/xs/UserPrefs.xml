@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{A5C59524-1A5E-4160-A5C1-F11B3F5BF09B}|Default">
+  <MonoDevelop.Ide.ItemProperties.DellProjectTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DellProjectTests/UnitTest1.cs">
+    <Files>
+      <File FileName="DellProjectAPI/Models/Attendee.cs" Line="22" Column="21" />
+      <File FileName="DellProjectAPI/Models/Event.cs" Line="30" Column="30" />
+      <File FileName="DellProjectAPI/Models/Organizer.cs" Line="26" Column="10" />
+      <File FileName="DellProjectAPI/Models/Schedule.cs" Line="9" Column="6" />
+      <File FileName="DellProjectAPI/Services/ProjectService.cs" Line="24" Column="1" />
+      <File FileName="DellProjectAPI/Models/Activity.cs" Line="30" Column="1" />
+      <File FileName="DellProjectAPI/Persistence/EventInMemDao.cs" Line="50" Column="10" />
+      <File FileName="DellProjectAPI/Persistence/ScheduleInMemDao.cs" />
+      <File FileName="DellProjectAPI/Persistence/OrganizerInMemDao.cs" />
+      <File FileName="DellProjectAPI/Persistence/AttendeeInMemDao.cs" />
+      <File FileName="DellProjectAPI/Persistence/ActivityInMemDao.cs" />
+      <File FileName="DellProjectTests/UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DellProjectAPI" expanded="True">
+            <Node name="DellProjectAPI" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Persistence" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="DellProjectTests" expanded="True">
+              <Node name="UnitTest1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.DellProjectAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

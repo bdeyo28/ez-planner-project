@@ -1,0 +1,20 @@
+.menu {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: whitesmoke;
+}
+
+.mat-menu-item {
+    background: white;
+    background-size: cover;
+    color: black;
+}
+
+.mat-menu-item-submenu-trigger::after {
+    color: black;
+}
+
+.menuButton {
+    color: black;
+    font-size: large;
+}

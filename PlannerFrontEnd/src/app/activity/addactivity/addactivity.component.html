@@ -1,0 +1,42 @@
+<div id = "box">
+    <br>
+    <br>
+    <br>
+    <div id="addActivity">
+        <!-- header1 -->
+        <h1>What Are {{event.eventName}}'s Activities?</h1>
+        <h4>Enter Each Required Field Marked With *</h4>
+
+        <h4>*Activity Name*</h4>
+        <input style="width: 300px" type="text" [(ngModel)]="name" placeholder="Enter Name Here : ">
+        <br>
+        <br>
+        <h4>*Amount Of Time*</h4>
+        <input style="width: 300px" type="text" [(ngModel)]="duration" placeholder="Enter Number Of Hours : ">
+        <br>
+        <br>
+
+        <button type = "button" 
+        class= "btn btn-success" id = "button1" (click) = "addActivity()">Add Activity</button>
+
+        <br>
+        <br>
+
+        <div id="activityAdded"></div>
+        <div id="addActivityError"></div>
+
+        <br>
+        <hr class = "light">
+        <h4>Is That All? Don't Worry You Can Add More Later...</h4>
+        <button type = "button" 
+        class= "btn btn-success" id = "button2" (click) = "nextPage()">Confirm Event</button>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+</div>

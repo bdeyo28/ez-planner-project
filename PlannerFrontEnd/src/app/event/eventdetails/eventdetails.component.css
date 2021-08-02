@@ -1,0 +1,28 @@
+#box {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 5px solid black;
+    width: 60%;
+    height: auto;
+    background: darkgray;
+    /* background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(59,209,179,1) 35%, rgba(0,212,255,1) 100%); */
+}
+
+#imageDiv {
+    background : url('/assets/DetailTheme.jpg');
+    width: 90%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+#innerBox {
+    width: 80%;
+    background: whitesmoke;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    opacity: .9;
+}

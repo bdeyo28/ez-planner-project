@@ -1,0 +1,33 @@
+<div id="box">
+    <div id="innerBox">
+        <img src="./assets/MagicPlanner2.png">
+        <br>
+        <input type="text" placeholder="Enter Username" [(ngModel)]="userName">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Email" [(ngModel)]="userEmail">
+        <br>
+        <br>
+        <input type="password" placeholder="Enter Password" [(ngModel)]="userPassword">
+        <br>
+        <br>
+        <input type="password" placeholder="Confirm Password" [(ngModel)]="confirmPassword">
+        <br>
+        <br>
+        <button type="button" class="btn btn-info" (click)="submit()">Register</button>
+        <br>
+        <br>
+    </div>
+</div>
+<br>
+<br>
+<div id="errorBox">
+    <div id="usernameInvalid"></div>
+    <br>
+    <div id="emailInvalid"></div>
+    <br>
+    <div id="passwordInvalid"></div>
+    <br>
+    <div id="notMatchingPassword"></div>
+    <br>
+</div>

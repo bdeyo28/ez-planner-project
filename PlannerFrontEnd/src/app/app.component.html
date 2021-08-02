@@ -1,0 +1,13 @@
+<div class = "menu">
+    <button mat-button [matMenuTriggerFor]="menu" 
+        class="menuButton">&#9776; MENU</button>
+    <mat-menu #menu="matMenu" class="menuClass">
+        <button mat-menu-item [routerLink] = "['']">Home</button>
+        <button mat-menu-item [routerLink] = "['contactMe']">Contact Me</button>
+        <button mat-menu-item [routerLink] = "['findEvent']">Find An Event</button>
+        <button *ngIf = "!signedIn" mat-menu-item [routerLink] = "['login']">Sign In</button>
+        <button *ngIf = "signedIn" mat-menu-item (click) = "signOut()">Sign Out</button>
+    </mat-menu>
+</div>
+
+<router-outlet></router-outlet>

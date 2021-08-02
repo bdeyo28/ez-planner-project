@@ -1,0 +1,35 @@
+#addAttendee {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    min-height: 70%;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+#button1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#box {
+    height: auto;
+    background-image: url('/assets/outdoors3.jpg');
+    background-position: center;
+    opacity: .9;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 2px solid dimgray;
+}
+
+#addAttendeeError {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: none;
+    color: darkred;
+}

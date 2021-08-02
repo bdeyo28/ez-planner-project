@@ -1,0 +1,62 @@
+<body>
+    <div id="header">
+        <img src="./assets/MagicPlanner.png">
+    </div>
+
+    <br>
+    <br>
+
+    <div id="menu">
+        <!-- <button type = "button" class= "btn btn-success" id = "scheduleEvent" [routerLink] = "['/event']">Schedule An Event</button>
+        <button type = "button" class= "btn btn-success" id = "findEvent">Find An Event</button>
+        <button type = "button" class= "btn btn-success" id = "contactOrganizer" [routerLink] = "['/contact']">Contact Host</button> -->
+        <hr id="light">
+    </div>
+
+    <div class="carouselContainer">
+        <app-carousel></app-carousel>
+    </div>
+
+    <div id="footer">
+        <hr id="light2">
+        <br>
+        <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif;
+        text-align: center;" *ngIf="username == ''">You Need To Signed In To Schedule An Event</h1>
+        <button type="button" class="btn btn-success" id="scheduleEvent" *ngIf="username == ''"
+            [routerLink]="['login']">Click Here To Sign In</button>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif;
+                text-align: center; color: #3BD1B3" 
+                *ngIf="username != ''"><i><b>Signed In As Organizer: {{username}}</b></i></h1>
+        <br>
+        <button style="width: 300px;"type="button" *ngIf="username != ''" class="btn btn-success" id="findEvent"
+            [routerLink]="['scheduleEvent']">Schedule A New Event</button>
+
+        <br>
+
+        <button style="width: 300px;" type="button" *ngIf="username != ''" class="btn btn-success" id="findEvent" [routerLink]="['findEvent']">Find
+            & Edit An Existing Event</button>
+
+        <br>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif;
+        text-align: center;">Questions, Comments, Concerns?</h1>
+
+        <button type="button" class="btn btn-success" id="findEvent" [routerLink]="['contactMe']">Contact Me</button>
+        <br>
+        <hr id="light3">
+        <br>
+        <h1 style="font-family: 'Times New Roman', Times, serif;
+                    text-align: center;"><i>Thank You For Visiting EZ Planner!</i></h1>
+
+        <br>
+        <h4 style="font-size: 
+                    xx-small;
+                    display: flex;
+                    justify-content: center;">Sponsored By Talent Path, A Division of Genuent Employment LLC</h4>
+        <img id="tpLogo" src="./assets/TPLOGO.png">
+
+    </div>
+
+</body>

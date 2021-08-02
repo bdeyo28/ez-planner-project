@@ -1,0 +1,29 @@
+#box {
+    height: auto;
+    background-image: url('/assets/outdoors3.jpg');
+    background-position: center;
+    opacity: .9;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 2px solid dimgray;
+}
+#addActivity {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+#addActivityError {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    display: none;
+    color: darkred;
+}

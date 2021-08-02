@@ -1,0 +1,74 @@
+body {
+    height: 40%;
+}
+
+#findEvent {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    background: whitesmoke;
+}
+
+#editButton {
+    margin-right: 10px;
+}
+
+#box {
+    height: auto;
+    background-image: url('/assets/outdoors2.jpg');
+    background-position: center;
+    opacity: .9;
+    width: 70%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 2px solid dimgray;
+}
+
+#eventDetails {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background: whitesmoke;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    margin-top: 30px;
+    display: none;
+}
+
+#attendees, #activities {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background: whitesmoke;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    display: none;
+}
+
+#editEvent {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background: whitesmoke;
+    border: 2px solid dimgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+#show {
+    margin: auto;
+    position: relative;
+    text-align: center;
+}

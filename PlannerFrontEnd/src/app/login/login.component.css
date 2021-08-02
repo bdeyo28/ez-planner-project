@@ -1,0 +1,38 @@
+#box {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 5px solid dimgray;
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(59,209,179,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#innerBox {
+    width: 50%;
+    background: whitesmoke;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+#usernameInvalid, #passwordInvalid {
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+
+#errorBox {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    border: 5px solid darkred;
+    width: 30%;
+    height: auto;
+    display: none;
+}
+

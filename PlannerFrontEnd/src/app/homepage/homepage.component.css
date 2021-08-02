@@ -1,0 +1,94 @@
+body {
+    background-color: whitesmoke;
+}
+
+#header {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-size: xx-large;
+    top: -2%;
+}
+
+#header .img {
+    opacity: .6;
+    position: relative;
+}
+
+#light {
+    width: 75%;
+    color: lightgray;
+    opacity: .5;
+    position: relative;
+}
+
+#light2 {
+    width: 75%;
+    color: lightgray;
+    opacity: .5;
+    position: relative;
+    margin: auto;
+    margin-top: 115px;
+}
+
+#light3 {
+    width: 75%;
+    color: lightgray;
+    opacity: .5;
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#menu {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    bottom: 12.5%;
+}
+
+#contactOrganizer, #scheduleEvent, #clickHere{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    position: relative;
+} 
+
+#findEvent {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carouselContainer {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    height: 400px;
+    width: 70%;
+    padding: 2em;
+    bottom: 18%;
+}
+
+#footer {
+    padding-bottom: 75px;
+    margin: auto;
+    position: relative;
+    bottom: 10%;
+}
+
+#tpLogo {
+    margin:auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -1%;
+}

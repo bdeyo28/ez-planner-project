@@ -1,0 +1,40 @@
+<body>
+<div id = "box">
+    <br>
+    <br>
+    <div id="addAttendee">
+        <!-- header1 -->
+        <h1>Who Will Be Invited To {{attendeeEvent.eventName}}?</h1>
+        <h4>Enter Each Required Field Marked With *</h4>
+
+        <h4>*Attendee Name*</h4>
+        <input style="width: 300px" type="text" [(ngModel)]="name" placeholder="Enter Name Here : ">
+        <br>
+        <br>
+        <h4>*Attendee Email*</h4>
+        <input style="width: 300px" type="text" [(ngModel)]="email" placeholder="Enter Email Here : ">
+        <br>
+        <br>
+
+        <button type = "button" 
+        class= "btn btn-success" id = "button1" (click) = "addAttendee()">Add Attendee</button>
+
+        <br>
+
+        <div id="attendeeAdded"></div>
+        <div id = "addAttendeeError"></div>
+
+        <br>
+        <hr class = "light">
+        <h4>Is That Everyone? Don't Worry You Can Add More Later...</h4>
+        <button type = "button" 
+        class= "btn btn-success" id = "button2" (click) = "nextPage()">Add Activities &#x2192;</button>
+        <br>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    </div>
+
+</body>

@@ -1,0 +1,32 @@
+<div id="box">
+    <br>
+    <div id="imageDiv">
+        <br>
+        <div id="innerBox">
+            <br>
+            <br>
+            <h1><b><i>You've Been Invited To!</i></b></h1>
+            <h1><b><i>{{eventToView.eventName}}</i></b></h1>
+            <br>
+            <h3><i>Location: {{eventToView.location}}</i></h3>
+            <h3><i>Date: {{eventToView.date.toString().substring(0, 10)}}</i></h3>
+            <h3><i>Time: {{eventToView.time}}</i></h3>
+            <br>
+            <hr style="opacity: .5;">
+            <br>
+            <h2><b>Activities At {{eventToView.eventName}}</b></h2>
+            <h3 *ngFor="let a of activities">
+                    <b>{{a.name}}</b> - Time: {{a.duration}} Hours
+            </h3>
+            <br>
+            <br>
+            <h2>Please contact {{organizer.name}} at {{organizer.email}} to RSVP!</h2>
+            <h2>Hope to see you there!</h2>
+            {{print()}}
+            <br>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+</div>

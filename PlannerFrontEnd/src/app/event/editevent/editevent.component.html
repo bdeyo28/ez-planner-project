@@ -1,0 +1,145 @@
+<div id="box">
+    <br>
+    <br>
+    <br>
+    <div id="editEvent">
+        <!-- header1 -->
+        <h1><b><i>Event Details</i></b></h1>
+        <h2 id="current">Current Name: {{eventToEdit.eventName}}</h2>
+        <h2>Enter New Event Name</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newName" placeholder="Enter New Value">
+        <br>
+        <br>
+        <h2 id="current">Current Date: {{eventToEdit.date.toString().substring(0, 10)}}</h2>
+        <h2>Enter New Date</h2>
+        <input style="width: 300px" type="date" [(ngModel)]="newDate" placeholder="Enter New Value">
+        <br>
+        <br>
+        <h2 id="current">Current Location: {{eventToEdit.location}}</h2>
+        <h2>Enter New Location</h2>
+        <input style="width: 300px" type="text" [(ngModel)] = "newLocation" placeholder="Enter New Location">
+        <br>
+        <br>
+        <h2 id="current">Current Date: {{eventToEdit.time}}</h2>
+        <h2>Enter New Event Time</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newTime" placeholder="Enter New Event Time">
+        <br>
+        <br>
+        <h2 id="current">Current Category: {{eventToEdit.category}}</h2>
+        <h2>New Category: </h2><select style="width: 100px" [(ngModel)]="newCategory">
+            <option [ngValue]=null></option>
+            <option value="Friends">Friends</option>
+            <option value="Family">Family</option>
+            <option value="Work">Work</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button type="button" class="btn btn-success" (click)="editEvent()">Confirm Event Edit</button>
+        <br>
+        <br>
+        <div id="eventEdited"></div>
+        <br>
+    </div>
+
+    <div id="editActivity">
+        <!-- header1 -->
+        <h1><b><i>{{eventToEdit.eventName}}'s Activities</i></b></h1>
+        <h2>Choose An Activity To Edit Or Delete</h2>
+        <select style="width: 200px" [(ngModel)]="activityId">
+            <option [ngValue]=null></option>
+            <option *ngFor="let a of activities" value="{{a.id}}">Name: {{a.name}}</option>
+        </select>
+        <br>
+        <br>
+        <h2>Enter New Name</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newActivityName" placeholder="Enter New Value">
+        <br>
+        <br>
+        <h2>Enter New Duration</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newActivityDuration" placeholder="Enter New Value">
+        <br>
+        <div id="changeActivity">
+            <button type="button" id="editButton" class="btn btn-success" (click)="editActivity()">Confirm Edit</button>
+            <button type="success" id="editButton" class=" btn btn-success" (click)="deleteActivity()">Delete This Activity</button>
+            <button type="success" id="editButton" class=" btn btn-success" (click)="addActivity()">Add New</button>
+            <br>
+            <br>
+            <div *ngIf="checkDeleteActivity">
+                <h4><i>Are You Sure You Want To Delete This Activity?</i></h4>
+                <button id="editButton" type="success" class=" btn btn-success" (click)="confirmDeleteActivity()">Yes</button>
+                <button type="success" class=" btn btn-success" (click)="unconfirmDeleteActivity()">No</button>
+            </div>
+        </div>
+        <div id="addNewActivity">
+            <input style="width: 300px" [(ngModel)] = "addedActivityName" type = "text" placeholder="Enter Activity Name">
+            <input style="width: 300px" [(ngModel)] = "addedActivityDuration" type = "text" placeholder="Enter Activty Duration">
+            <br>
+            <br>
+            <button id="editButton" id="editButton" class="option" (click) = "confirmAddActivity()">Add This Activity</button>
+            <button class="option" (click) = "closeAddActivity()">Close Tab</button>
+        </div>
+        <br>
+        <br>
+        <div id ="activityAdded"></div>
+        <div id="activityDeleted"></div>
+        <div id="activityEdited"></div>
+        <br>
+    </div>
+
+    <div id="editAttendee">
+        <!-- header1 -->
+        <h1><b><i>{{eventToEdit.eventName}}'s Attendees</i></b></h1>
+        <h2>Choose An Attendee To Edit Or Delete</h2>
+        <select style="width: 200px" [(ngModel)]="attendeeId">
+            <option [ngValue]=null></option>
+            <option *ngFor="let a of attendees" value="{{a.id}}">Name: {{a.name}}</option>
+        </select>
+        <br>
+        <br>
+        <h2>Enter New Name</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newAttendeeName" placeholder="Enter New Name">
+        <br>
+        <br>
+        <h2>Enter New Email</h2>
+        <input style="width: 300px" type="text" [(ngModel)]="newAttendeeEmail" placeholder="Enter New Email">
+        <br>
+        <div id="changeAttendee">
+            <button type="button" id="editButton" class="btn btn-success" (click)="editAttendee()">Confirm Edit</button>
+            <button type="success" id="editButton" class=" btn btn-success" (click)="deleteAttendee()">Delete This Attendee</button>
+            <button type="success" id="editButton" class=" btn btn-success" (click)="addAttendee()">Add New</button>
+            <br>
+            <br>
+            <div *ngIf="checkDeleteAttendee">
+                <h4><i>Are You Sure You Want To Delete This Attendee?</i></h4>
+                <button id="editButton" type="success" class=" btn btn-success" (click)="confirmDeleteAttendee()">Yes</button>
+                <button type="success" class=" btn btn-success" (click)="unconfirmDeleteAttendee()">No</button>
+            </div>
+        </div>
+        <div id="addNewAttendee">
+            <input style="width: 300px" [(ngModel)] = "addedAttendeeName" type = "text" placeholder="Enter Attendee Name">
+            <input style="width: 300px" [(ngModel)] = "addedAttendeeEmail" type = "text" placeholder="Enter Attendee Email">
+            <br>
+            <br>
+            <button id="editButton" class="option"  (click) = "confirmAddAttendee()">Add This Attendee</button>
+            <button class="option" (click) = "closeAddAttendee()">Close Tab</button>
+        </div>
+        <br>
+        <br>
+        <div id="attendeeAdded"></div>
+        <div id="attendeeDeleted"></div>
+        <div id="attendeeEdited"></div>
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <button type="button" 
+            class="btn btn-light" 
+            style="border-radius: 50%; width: 100px; color: black; text-align:center; font-size: 50px;"
+            (click) = "navigateFindEvent()">&#x21a9;</button>
+    <br>
+    <br>
+    <br>
+</div>
